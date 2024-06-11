@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm" action="https://formspree.io/f/xayrrepz" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="edificio">Edificio</label>
+                <input type="text" id="edificio" name="edificio" required>
+            </div>
+            <div class="form-group">
+                <label>¿El portón funciona?</label>
+                <label class="radio-label"><input type="radio" name="porton_funciona" value="Sí" required> Sí</label>
+                <label class="radio-label"><input type="radio" name="porton_funciona" value="No" required> No</label>
+            </div>
+            <div class="form-group">
+                <label for="observacion">Observación</label>
+                <textarea id="observacion" name="observacion" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <div class="message" id="message"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
